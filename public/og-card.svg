@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#0a0e13"/>
+  <g stroke="#16202b" stroke-width="2">
+    <path d="M0 90h1200M0 180h1200M0 270h1200M0 360h1200M0 450h1200M0 540h1200M120 0v630M300 0v630M480 0v630M660 0v630M840 0v630M1020 0v630"/>
+  </g>
+  <circle cx="880" cy="300" r="150" fill="none" stroke="#2dd4bf" stroke-width="3" opacity="0.35"/>
+  <circle cx="880" cy="300" r="95" fill="none" stroke="#2dd4bf" stroke-width="2" opacity="0.25"/>
+  <circle cx="880" cy="300" r="26" fill="#2dd4bf"/>
+  <circle cx="820" cy="230" r="12" fill="#34d399"/>
+  <circle cx="960" cy="360" r="12" fill="#fbbf24"/>
+  <circle cx="930" cy="200" r="12" fill="#94a3b8"/>
+  <text x="80" y="250" font-family="monospace" font-size="64" font-weight="bold" fill="#e8efec">Jothishri B</text>
+  <text x="80" y="320" font-family="monospace" font-size="30" fill="#2dd4bf">full-stack developer · real-time robotics</text>
+  <text x="80" y="380" font-family="monospace" font-size="24" fill="#7d8f87">React · TypeScript · MQTT · Chennai, IN</text>
+</svg>

@@ -1,0 +1,262 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --bg: #f5f7f6;
+  --bg-soft: #edf1ef;
+  --surface: #ffffff;
+  --surface-2: #eef2f0;
+  --border: #d9e0dd;
+  --border-strong: #bcc7c2;
+  --ink: #101815;
+  --muted: #4b5a53;
+  --faint: #6b7b73;
+
+  --accent: #0d7a6c;
+  --accent-ink: #0a5f55;
+  --accent-soft: #d9efea;
+  --on-accent: #ffffff;
+
+  --ok: #15803d;
+  --warn: #b45309;
+  --idle: #475569;
+
+  --grid-line: #d3dcd8;
+  --map-glow: rgba(13, 122, 108, 0.16);
+
+  --motion-dur: 220ms;
+  --motion-dur-slow: 320ms;
+  --motion-ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --card-shadow: 0 1px 2px rgba(16, 24, 21, 0.06);
+  --card-shadow-hover: 0 14px 32px -12px rgba(13, 122, 108, 0.32), 0 4px 12px rgba(16, 24, 21, 0.1);
+
+  --radius: 12px;
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+.dark {
+  --bg: #0a0e13;
+  --bg-soft: #0d1319;
+  --surface: #11181f;
+  --surface-2: #16202a;
+  --border: #22303c;
+  --border-strong: #314354;
+  --ink: #e8efec;
+  --muted: #a7b6ae;
+  --faint: #7d8f87;
+
+  --accent: #2dd4bf;
+  --accent-ink: #2dd4bf;
+  --accent-soft: rgba(45, 212, 191, 0.12);
+  --on-accent: #052925;
+
+  --ok: #34d399;
+  --warn: #fbbf24;
+  --idle: #94a3b8;
+
+  --grid-line: #182430;
+  --map-glow: rgba(45, 212, 191, 0.14);
+
+  --motion-dur: 220ms;
+  --motion-dur-slow: 320ms;
+  --motion-ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --card-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+  --card-shadow-hover: 0 16px 36px -14px rgba(45, 212, 191, 0.32), 0 4px 14px rgba(0, 0, 0, 0.5);
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-bgsoft: var(--bg-soft);
+  --color-surface: var(--surface);
+  --color-surface2: var(--surface-2);
+  --color-border: var(--border);
+  --color-borderstrong: var(--border-strong);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-faint: var(--faint);
+  --color-accent: var(--accent);
+  --color-accentink: var(--accent-ink);
+  --color-accentsoft: var(--accent-soft);
+  --color-onaccent: var(--on-accent);
+  --color-ok: var(--ok);
+  --color-warn: var(--warn);
+  --color-idle: var(--idle);
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-mono);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--on-accent);
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -4rem;
+  z-index: 100;
+  background: var(--accent);
+  color: var(--on-accent);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  transition: top 0.15s ease;
+}
+.skip-link:focus {
+  top: 1rem;
+}
+
+.mono {
+  font-family: var(--font-mono);
+}
+
+.panel-grid {
+  background-image:
+    linear-gradient(var(--grid-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+@keyframes float-a {
+  0%, 100% { transform: translate3d(0, 0, 0); opacity: 0.7; }
+  50% { transform: translate3d(0, -14px, 0); opacity: 1; }
+}
+@keyframes float-b {
+  0%, 100% { transform: translate3d(0, 0, 0) rotate(0deg); opacity: 0.6; }
+  50% { transform: translate3d(0, 10px, 0) rotate(8deg); opacity: 1; }
+}
+.float-a { animation: float-a 7s ease-in-out infinite; }
+.float-b { animation: float-b 9s ease-in-out infinite; }
+
+.link-underline {
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  text-underline-offset: 3px;
+  transition: text-decoration-color 0.2s ease-out, color 0.2s ease-out;
+}
+.link-underline:hover {
+  text-decoration-color: var(--accent);
+}
+
+.card-lift {
+  box-shadow: var(--card-shadow);
+  transition:
+    transform var(--motion-dur) var(--motion-ease),
+    border-color var(--motion-dur) var(--motion-ease),
+    box-shadow var(--motion-dur) var(--motion-ease);
+}
+@media (hover: hover) and (pointer: fine) {
+  .card-lift:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent);
+    box-shadow: var(--card-shadow-hover);
+  }
+}
+.card-lift:focus-visible,
+.card-lift:focus-within {
+  transform: translateY(-5px);
+  border-color: var(--accent);
+  box-shadow: var(--card-shadow-hover);
+}
+
+.card-zoom {
+  transition: transform var(--motion-dur-slow) var(--motion-ease);
+}
+@media (hover: hover) and (pointer: fine) {
+  .card-lift:hover .card-zoom {
+    transform: scale(1.03);
+  }
+}
+.card-lift:focus-within .card-zoom {
+  transform: scale(1.03);
+}
+
+.card-view {
+  opacity: 0;
+  transform: translateX(-6px);
+  transition: opacity var(--motion-dur) var(--motion-ease), transform var(--motion-dur) var(--motion-ease);
+}
+@media (hover: hover) and (pointer: fine) {
+  .card-lift:hover .card-view {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.card-lift:focus-within .card-view {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.chip-hover {
+  transition:
+    transform var(--motion-dur) var(--motion-ease),
+    border-color var(--motion-dur) var(--motion-ease),
+    color var(--motion-dur) var(--motion-ease),
+    background-color var(--motion-dur) var(--motion-ease);
+}
+@media (hover: hover) and (pointer: fine) {
+  .chip-hover:hover {
+    transform: scale(1.06) translateY(-1px);
+    border-color: var(--accent);
+    color: var(--accent-ink);
+    background-color: var(--accent-soft);
+  }
+}
+
+@keyframes loader-sweep {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(250%); }
+}
+.loader-bar { animation: loader-sweep 1s ease-out infinite; }
+
+@media (prefers-reduced-motion: reduce) {
+  .float-a, .float-b, .loader-bar { animation: none; }
+  .chip-hover:hover { transform: none; }
+  .card-lift,
+  .card-lift:hover,
+  .card-lift:focus-visible,
+  .card-lift:focus-within,
+  .card-lift:hover .card-zoom,
+  .card-lift:focus-within .card-zoom {
+    transform: none;
+  }
+  .card-view,
+  .card-lift:hover .card-view,
+  .card-lift:focus-within .card-view {
+    transform: none;
+    opacity: 0;
+  }
+}

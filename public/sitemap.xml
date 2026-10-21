@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://jothishri.dev/</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://jothishri.dev/projects/fleet-management-dashboard</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://jothishri.dev/projects/amr-navigation-system</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://jothishri.dev/projects/shobotflow</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://jothishri.dev/projects/saas-workspace-platform</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+</urlset>

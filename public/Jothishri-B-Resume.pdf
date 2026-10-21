@@ -1,0 +1,54 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 4 0 R /Resources << /Font << /F1 5 0 R /F2 6 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 1665 >>
+stream
+BT /F2 26 Tf 56 750 Td (JOTHISHRI B) Tj ET
+BT /F1 13 Tf 56 717 Td (Frontend Developer — Chennai, India) Tj ET
+BT /F1 11 Tf 56 697 Td (jothishri03@gmail.com  |  github.com/Jothi-shri) Tj ET
+BT /F2 13 Tf 56 671 Td (EXPERIENCE) Tj ET
+BT /F2 11 Tf 56 651 Td (Web Developer, Navic \(IITM-incubated startup\) — Nov 2025 to Present) Tj ET
+BT /F1 10 Tf 56 633 Td (- React/TypeScript frontends for AMRs \(Greeting, Shopping Assistance Robots\)) Tj ET
+BT /F1 10 Tf 56 616 Td (- Real-time monitoring and control dashboards; reusable status/mission/nav components) Tj ET
+BT /F1 10 Tf 56 599 Td (- Live SLAM maps, LiDAR scans, battery and obstacle detection; responsive, cross-browser) Tj ET
+BT /F1 10 Tf 56 582 Td (- MQTT/REST telemetry integration with performance tuning under real-time load) Tj ET
+BT /F2 13 Tf 56 557 Td (PROJECTS) Tj ET
+BT /F1 10 Tf 56 537 Td (- Fleet Management Dashboard \(React, Leaflet, FastAPI, MQTT, PostgreSQL, MongoDB\)) Tj ET
+BT /F1 10 Tf 56 520 Td (- AMR Navigation System \(React, Leaflet, Konva, Flask, SQL\)) Tj ET
+BT /F1 10 Tf 56 503 Td (- SHOBOTFLOW no-code Docker deployment platform \(React, Vercel\)) Tj ET
+BT /F1 10 Tf 56 486 Td (- SaaS Workspace Platform \(React 19, FastAPI, PostgreSQL, JWT\) — live on Netlify) Tj ET
+BT /F2 13 Tf 56 461 Td (EDUCATION) Tj ET
+BT /F1 11 Tf 56 441 Td (BE Computer Science, Mahendra Institutions \(affiliated to Anna University\) — 2025) Tj ET
+BT /F2 13 Tf 56 415 Td (SKILLS) Tj ET
+BT /F1 10 Tf 56 395 Td (React, TypeScript, Vite, Zustand, React Router, Tailwind; Leaflet, Konva;) Tj ET
+BT /F1 10 Tf 56 378 Td (REST, MQTT, WebSocket, JWT; FastAPI, Flask, PostgreSQL, MongoDB; Docker, CI/CD) Tj ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000251 00000 n 
+0000001967 00000 n 
+0000002037 00000 n 
+trailer
+<< /Size 7 /Root 1 0 R >>
+startxref
+2112
+%%EOF
