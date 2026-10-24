@@ -64,5 +64,5 @@ for (let i = 1; i <= objects.length; i++) {
 }
 pdf += `trailer\n<< /Size ${objects.length + 1} /Root 1 0 R >>\nstartxref\n${xrefAt}\n%%EOF`
 
-writeFileSync(new URL('../public/Jothishri-B-Resume.pdf', import.meta.url), pdf)
-console.log('Wrote public/Jothishri-B-Resume.pdf')
+writeFileSync(new URL('../public/Jothishri_B_Resume.pdf', import.meta.url), pdf)
+console.log('Wrote public/Jothishri_B_Resume.pdf')

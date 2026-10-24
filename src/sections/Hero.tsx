@@ -62,7 +62,7 @@ export function Hero() {
               View projects →
             </Link>
             <a
-              href="/Jothishri-B-Resume.pdf"
+              href="/Jothishri_B_Resume.pdf"
               download
               className="mono rounded-[10px] border border-borderstrong px-5 py-2.5 text-[13px] font-medium text-ink transition-all duration-200 ease-out hover:-translate-y-0.5 hover:border-accent hover:text-accentink active:translate-y-0"
             >

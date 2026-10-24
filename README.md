@@ -1,5 +1,7 @@
 # Jothishri B — Portfolio
 
+**Live:** https://jothishri-portfolio.netlify.app/
+
 Personal portfolio for **Jothishri B, Frontend Developer (Chennai, India)** — designed like a
 real-time robot-operations dashboard crossed with a polished product site. The site itself is the
 proof of skill: a well-built React 19 + TypeScript app with dark/light themes and case-study
@@ -56,7 +58,8 @@ One accent colour (teal), Inter for body, JetBrains Mono for data/labels.
 
 ## Deployment
 
-**Netlify** — `netlify.toml` is included (`npm run build`, `dist/`, SPA redirect).
+**Netlify** — live at https://jothishri-portfolio.netlify.app/ (`netlify.toml` included:
+`npm run build`, `dist/`, SPA redirect).
 
 **Vercel** — `vercel.json` rewrites all routes to `/index.html`, then `vercel --prod` or
 connect the repo.

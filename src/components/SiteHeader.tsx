@@ -77,7 +77,7 @@ export function SiteHeader() {
           <span className="mx-1 h-5 w-px bg-border" aria-hidden="true" />
           <ThemeToggle />
           <a
-            href="/Jothishri-B-Resume.pdf"
+            href="/Jothishri_B_Resume.pdf"
             download
             className="mono ml-1 rounded-[10px] bg-accent px-4 py-2 text-[13px] font-semibold text-onaccent transition-all duration-200 ease-out hover:-translate-y-0.5 hover:opacity-90 hover:shadow-lg hover:shadow-accent/20 active:translate-y-0"
           >
@@ -121,7 +121,7 @@ export function SiteHeader() {
             ))}
             <li>
               <a
-                href="/Jothishri-B-Resume.pdf"
+                href="/Jothishri_B_Resume.pdf"
                 download
                 className="mono mt-1 block rounded-md bg-accent px-3 py-2.5 text-center text-[14px] font-semibold text-onaccent"
               >
